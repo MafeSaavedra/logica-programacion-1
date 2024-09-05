@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar Números</title>
+</head>
+<body>
+    <h1>Ordenar Números</h1>
+    <button onclick="ordenarNumeros()">Ingresar Números</button>
+    <div id="resultado"></div>
+
+    <script>
+        function ordenarNumeros() {
+            // Solicitar los 3 números al usuario
+            let primerNumero = Number(prompt("Ingrese el primer número:"));
+            let segundoNumero = Number(prompt("Ingrese el segundo número:"));
+            let tercerNumero = Number(prompt("Ingrese el tercer número:"));
+
+            let numeros = [primerNumero, segundoNumero, tercerNumero];
+
+            
+            let ordenDescendente = [...numeros].sort((a, b) => b - a);
+            
+            let ordenAscendente = [...numeros].sort((a, b) => a - b);
+
+            // Construir la salida de los resultados
+            let resultadoHTML = `
+                <p>Ordenados de mayor a menor: ${ordenDescendente.join(', ')}</p>
+                <p>Ordenados de menor a mayor: ${ordenAscendente.join(', ')}</p>
+                <p>El número del centro es: ${ordenAscendente[1]}</p>
+            `;
+
+            // Verificar si todos los números son iguales
+            if (primerNumero === segundoNumero && segundoNumero === tercerNumero) {
+                resultadoHTML += `<p>Todos los números son iguales.</p>`;
+            }
+
+            // Mostrar los resultados en el DOM
+            document.getElementById("resultado").innerHTML = resultadoHTML;
+        }
+    </script>
+</body>
+</html>
