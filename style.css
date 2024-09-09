@@ -15,3 +15,10 @@ button {
     height: 50px;
     
 }
+h4 {
+    margin-left: 80%; 
+    color: grey;/* Margen a la izquierda del elemento h4 */
+}
+h3 {
+    color: grey;/* Margen a la izquierda del elemento h4 */
+}

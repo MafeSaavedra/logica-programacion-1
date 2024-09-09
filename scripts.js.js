@@ -12,7 +12,7 @@ tercerNumero = Number(tercerNumero);
 
 
 if (isNaN(primerNumero) || isNaN(segundoNumero) || isNaN(tercerNumero)) {
-    console.log("Error: Todos los valores deben ser números válidos.");
+    console.log("Error: Ingresaste valores no válidos en el programa.");
 } else {
     let numeros = [primerNumero, segundoNumero, tercerNumero];
 
