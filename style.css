@@ -1,0 +1,14 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 25px;
+}
+
+button {
+    font-size: 18px; /* Tamaño de la fuente */
+    border: 1px solid blue;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: white; /* Color de fondo */
+    color: blue; /* Color del texto */
+    cursor: pointer; /* Cursor en forma de mano */
+    
+}
