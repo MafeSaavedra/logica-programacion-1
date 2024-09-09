@@ -1,6 +1,7 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin-left: 25px;
+    font-family: 'Poppins';
+    text-align: center; 
+    margin-top: 15px;
 }
 
 button {
@@ -10,5 +11,7 @@ button {
     background-color: white; /* Color de fondo */
     color: blue; /* Color del texto */
     cursor: pointer; /* Cursor en forma de mano */
+    width: 200px; /* Ancho del botón */
+    height: 50px;
     
 }
