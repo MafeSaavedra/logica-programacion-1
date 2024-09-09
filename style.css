@@ -4,12 +4,21 @@ body {
     margin-top: 15px;
 }
 
+body {
+    margin-left: 85px;
+    align-items: center;
+    padding: 30px;
+    width: 90%;
+    height: 80%;
+    border: 1px solid;
+    line-height: 1
+  } 
 button {
     font-size: 18px; /* Tamaño de la fuente */
-    border: 1px solid blue;
+    border: 1px solid grey;
     border-radius: 5px; /* Bordes redondeados */
     background-color: white; /* Color de fondo */
-    color: blue; /* Color del texto */
+    color: black; /* Color del texto */
     cursor: pointer; /* Cursor en forma de mano */
     width: 200px; /* Ancho del botón */
     height: 50px;
