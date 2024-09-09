@@ -17,11 +17,18 @@
             let segundoNumero = Number(prompt("Ingrese el segundo número:"));
             let tercerNumero = Number(prompt("Ingrese el tercer número:"));
 
+            // Validar que las entradas sean números válidos
+            if (isNaN(primerNumero) || isNaN(segundoNumero) || isNaN(tercerNumero)) {
+                document.getElementById("resultado").innerHTML = `<p style="color: red;">Error: Todos los valores deben ser números válidos.</p>`;
+                return; 
+            }
+
             let numeros = [primerNumero, segundoNumero, tercerNumero];
 
-            
+            // Ordenar los números de mayor a menor
             let ordenDescendente = [...numeros].sort((a, b) => b - a);
-            
+
+            // Ordenar los números de menor a mayor
             let ordenAscendente = [...numeros].sort((a, b) => a - b);
 
             // Construir la salida de los resultados
